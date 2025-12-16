@@ -55,6 +55,7 @@
    ```
    git+https://github.com/huggingface/diffusers.git@refs/pull/12790/head
    huggingface_hub
+   gradio==6.1.0
    sentencepiece
    transformers
    torchvision
