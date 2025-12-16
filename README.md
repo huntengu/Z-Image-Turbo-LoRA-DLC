@@ -124,7 +124,7 @@ Contributions welcome! Fork the repo, add new LoRAs to the `loras` list, or enha
 - More LoRA presets.
 - Img2Img support (currently ignored for Turbo).
 - Batch generation.
-- 
+
 Repository: [https://github.com/PRITHIVSAKTHIUR/Z-Image-Turbo-LoRA-DLC.git](https://github.com/PRITHIVSAKTHIUR/Z-Image-Turbo-LoRA-DLC.git)
 
 ## License
