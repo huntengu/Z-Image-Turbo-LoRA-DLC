@@ -99,6 +99,16 @@ class OrangeRedTheme(Soft):
 orange_red_theme = OrangeRedTheme()
 
 loras = [
+
+    {
+        "image": "https://huggingface.co/Sumitc13/Z-image-Turbo_LogC4_lora/resolve/main/images/1764464517272__000005000_1.jpg",
+        "title": "LogC4",
+        "repo": "Sumitc13/Z-image-Turbo_LogC4_lora", #30
+        "weights": "z-image-logc4_000005000.safetensors",
+        "trigger_word": "LogC4"    
+    },
+
+ # --------------------------------------------------------------------------------------------------------------------------------------   
     {
         "image": "https://huggingface.co/Ttio2/Z-Image-Turbo-pencil-sketch/resolve/main/images/z-image_00097_.png",
         "title": "Turbo Pencil",
@@ -112,6 +122,13 @@ loras = [
         "repo": "Shakker-Labs/AWPortrait-Z", #1
         "weights": "AWPortrait-Z.safetensors",
         "trigger_word": "Portrait"    
+    },
+    {
+        "image": "https://huggingface.co/strangerzonehf/Flux-Ultimate-LoRA-Collection/resolve/main/images/cookie-mons.png",
+        "title": "Yarn Art Style",
+        "repo": "linoyts/yarn-art-style", #28
+        "weights": "yarn-art-style_000001250.safetensors",
+        "trigger_word": "yarn art style"    
     },
     {
         "image": "https://huggingface.co/Quorlen/Z-Image-Turbo-Behind-Reeded-Glass-Lora/resolve/main/images/ComfyUI_00391_.png",
@@ -294,6 +311,13 @@ loras = [
         "repo": "cactusfriend/longfurby-z", #27
         "weights": "longfurbyZ.safetensors",
         "trigger_word": ""    
+    },
+    {
+        "image": "https://huggingface.co/SkyAsl/Pixel-artist-Z/resolve/main/pixel-art-result.png",
+        "title": "Pixel Art",
+        "repo": "SkyAsl/Pixel-artist-Z", #29
+        "weights": "adapter_model.safetensors",
+        "trigger_word": "a pixel art character"    
     },
 ]
 
